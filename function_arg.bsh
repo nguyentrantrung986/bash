@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+echo "Arguments to the script: $@"
+
+function print_args {
+ echo "Arguments to the function: $@"
+}
+
+print_args arg1 arg2 arg3

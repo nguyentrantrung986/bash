@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+function extreme {
+ local min=0
+ local max=0
+ for e in $@
+  do
+  if [[ min -gt $e ]]; then let min=$e; fi
+  if [[ max -lt $e ]]; then let max=$e; fi
+ done
+ echo -n $min
+ echo -n " "
+ echo -n $max
+}
+
+extreme $@

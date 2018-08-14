@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+logs=(ddc ebs "self trace"); for i in `eval echo {0..$((${#logs[*]} -1 ))}`; do echo "remove ${logs[$i]}"; done

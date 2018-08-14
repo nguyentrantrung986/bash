@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+function addseq2 {
+ local sum=0
+ for e in $@
+  do
+  let sum=$sum+$e
+  done
+ echo $sum
+}
