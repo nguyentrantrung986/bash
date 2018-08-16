@@ -1,2 +1,2 @@
 Welcome to my third Git Repo!
-Learning Git is so boring!
+Learning Git is so much fun!
