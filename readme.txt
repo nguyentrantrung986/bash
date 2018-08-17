@@ -1,2 +1,2 @@
 Welcome to my third Git Repo!
-Using Git is so much fun!
+Making use of Git is so much fun!
