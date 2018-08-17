@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+r=$1%2
+if [[ r -eq 0 ]]
+then
+ echo "even"
+elif [[ r -eq 1 ]]
+then
+ echo "odd"
+fi

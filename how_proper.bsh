@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+if [[ $1 =~ ^[A-Z].* ]]
+then
+ echo "How proper"
+else
+ echo "How improper"
+fi

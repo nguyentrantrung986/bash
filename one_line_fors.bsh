@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+i=1; for s in $(ls *bsh); do echo -n "$i "; let i=$i+1; echo "$s is a bash script";done
+
+for i in {1..3}; do echo "";done
+echo -n "English alphabet is: "; for l in {a..z}; do echo -n "$l ";done
+echo ""
+eval echo "English alphabet is: {A..Z}"
+
+for in in {1..3}; do echo "";done
+hobbies=(movie music 'reading books' dancing) 
+for h in ${hobbies[*]}; do echo "I love $h";done
+echo ""
+for ((i = 0; i < ${#hobbies[*]}; i++)); do echo "I love ${hobbies[$i]}";done
+echo ""
+let l=${#hobbies[*]}-1; for i in $(eval echo {0..$l}); do echo "I love ${hobbies[$i]}";done
+echo ""
+for i in `echo "{1..${#hobbies[*]}}"`; do echo "I love ${hobbies[$i]}";done

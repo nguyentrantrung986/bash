@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+echo "First argument: $1"
+echo "No of argumens: $#"
+#p=$(expr $1 \* $#)
+#echo "Their product: $p" 
+echo "Their product: $(expr $1 \* $#)" 

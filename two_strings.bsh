@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+first_str="Finding"
+second_str="my way"
+echo -n $first_str
+echo -n " "
+echo $second_str
+echo $first_str
+echo $second_str

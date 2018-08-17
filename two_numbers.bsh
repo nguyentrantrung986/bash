@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+first_no=3.14
+second_no=2.71828
+sum=$(echo "$first_no + $second_no" | bc -l)
+echo $sum

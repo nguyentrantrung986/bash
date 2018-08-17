@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+flaws=(laziness procrastination loitering inferiority-complex "heart issue" "breathing issue" dissociability)
+unis=(ASU Michigan Illinois-Urbana)
+#c=$(expr ${#flaws[*]} + ${#unis[*]} )
+let c=${#flaws[*]}+${#unis[*]}
+echo "Two arrays has $c elements"

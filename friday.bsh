@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+d=`date | awk -F, '{print $1}'`
+if [[ $d = "Fri" ]]
+then 
+ echo "Thank Mose, it's Friday"
+elif [[ $d = "Sun" ]]
+then
+ echo "Thanks God, it's Sunday"
+fi
