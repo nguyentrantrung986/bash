@@ -9,7 +9,7 @@ file_cnt=$(ls | wc -l)
 while [[ -z $guess || $file_cnt != $guess ]]
 do
 	guess=$(guess_input)
-	if [[ ! $guess=~^[0-9]+$ ]]
+	if [[ ! $guess =~ ^[0-9]+$ ]]
 	then
 		echo "Please guess a number."
 	elif [[ $file_cnt -lt $guess ]]
